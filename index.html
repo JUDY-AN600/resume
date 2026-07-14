@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="安喆的活动组织、项目统筹与流程执行个人网站" />
+  <title>安喆｜个人网站</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Noto+Serif+SC:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#home">AZ</a>
+    <nav aria-label="主导航">
+      <a href="#work">项目</a>
+      <a href="#experience">经历</a>
+      <a href="#contact">联系</a>
+    </nav>
+    <div class="page-progress" aria-hidden="true"><span></span></div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy" data-reveal>
+        <p class="overline">PORTFOLIO / 2026</p>
+        <h1><span id="profile-name"></span><small id="profile-en"></small></h1>
+        <p class="hero-role" id="profile-role"></p>
+        <p class="hero-intro" id="profile-intro"></p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#work">查看项目</a>
+          <a class="text-button" href="#experience">完整经历 <span>↘</span></a>
+        </div>
+      </div>
+
+      <figure class="portrait" data-tilt>
+        <div class="portrait-backdrop"></div>
+        <img id="profile-photo" alt="安喆个人照片" />
+        <figcaption><span id="profile-location"></span><span>活动组织 / 项目统筹</span></figcaption>
+      </figure>
+
+      <div class="hero-meta" aria-hidden="true">
+        <span>SCROLL</span><i></i><span>01</span>
+      </div>
+    </section>
+
+    <section class="work-section" id="work">
+      <div class="section-heading" data-reveal>
+        <p class="overline">SELECTED WORK</p>
+        <h2>项目与实践</h2>
+        <p>按项目类型筛选，点击卡片查看具体职责与结果。</p>
+      </div>
+
+      <div class="filter-row" id="filters" data-reveal></div>
+      <div class="project-grid" id="project-grid"></div>
+    </section>
+
+    <section class="experience-section" id="experience">
+      <div class="experience-content">
+      <div class="section-heading inverse" data-reveal>
+        <p class="overline">EXPERIENCE</p>
+        <h2>经历与能力</h2>
+      </div>
+      <div class="experience-layout">
+        <div class="timeline" id="timeline"></div>
+        <div class="profile-panel" data-reveal>
+          <div>
+            <p class="panel-label">EDUCATION</p>
+            <div id="education"></div>
+          </div>
+          <div>
+            <p class="panel-label">SKILLS</p>
+            <div class="skill-list" id="skills"></div>
+            <div class="skill-detail" id="skill-detail" aria-live="polite"></div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-copy" data-reveal>
+        <p class="overline">CONTACT</p>
+        <h2>保持联系</h2>
+        <a id="email" class="contact-link" href="#"></a>
+        <p id="phone"></p>
+      </div>
+    </section>
+  </main>
+
+  <div class="drawer" id="drawer" aria-hidden="true">
+    <button class="drawer-close" aria-label="关闭">×</button>
+    <div class="drawer-inner">
+      <p class="drawer-type"></p>
+      <p class="drawer-period"></p>
+      <h2 class="drawer-title"></h2>
+      <p class="drawer-summary"></p>
+      <ul class="drawer-details"></ul>
+    </div>
+  </div>
+  <div class="drawer-mask" id="drawer-mask"></div>
+
+  <script src="content.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
